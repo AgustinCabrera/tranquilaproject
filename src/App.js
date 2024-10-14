@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import NavBar from './components/navbar/navbar';
+import { Home } from './components/HomeContainer/home';
+import { Gallery } from './components/GalleryContainer/gallery';
+import { Overview } from './components/OverviewContainer/overview';
+import { Map } from './components/MapContainer/map';
+import { Rates } from './components/RatesContainer/rates';
+import { LocalGuide } from './components/LocalGuideContainer/localguide';
+import { Contact } from './components/ContactContainer/contact';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+          <NavBar />
+        <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/category/overview' element={<Overview/>}/>
+        <Route path='category/map' element={<Map/>}/>
+        <Route path='category/gallery' element={<Gallery/>}/>
+        <Route path='category/rates' element={<Rates/>}/>
+        <Route path='category/localguide'element={LocalGuide}/>
+        <Route path='category/contact' element={Contact}/>
+
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
