@@ -1,5 +1,6 @@
 import Banner from '../banner/banner';
 import BookingForm from '../bookingForm/bookingForm';
+import { FooterComponent } from '../footerContainer/footer';
 import './home.css'
 
 export const Home = () => {
@@ -25,12 +26,7 @@ export const Home = () => {
         <img src="/home.jpg" alt="Luxurious villa" />
       </div>
     </div>
-    <footer>
-      <p>&copy; 2024 Miami Villas. All rights reserved.</p>
-      <p>
-        Visit our <a href="/contact">Contact page</a> for more information.
-      </p>
-    </footer>
+      <FooterComponent/>
     </div>
     
   );

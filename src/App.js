@@ -9,6 +9,7 @@ import { Rates } from './components/RatesContainer/rates';
 import { LocalGuide } from './components/LocalGuideContainer/localguide';
 import { Contact } from './components/ContactContainer/contact';
 
+
 function App() {
   return (
     <div className="App">

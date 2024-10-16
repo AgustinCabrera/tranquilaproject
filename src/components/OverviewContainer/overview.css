@@ -1,0 +1,60 @@
+.overview-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.intro-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.property-type {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.property-details {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.description, .features {
+  margin: 10px 0;
+}
+
+.view-more-btn {
+  background-color: #f99;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.home-highlights span {
+  margin-right: 15px;
+  font-size: 1.1rem;
+}
+
+.pictures-section {
+  margin-top: 20px;
+}
+
+.pictures-gallery {
+  display: flex;
+  gap: 15px;
+}
+
+.pictures-gallery img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.amenities-grid, .rules-grid, .policy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 10px;
+}
