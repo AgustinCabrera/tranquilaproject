@@ -2,9 +2,9 @@ import './footer.css';
 export const FooterComponent = () => {
   return (
     <footer>
-    <p>&copy; 2024 Miami Villas. All rights reserved.</p>
+    <p>&copy; 2024 La Tranquila Casa de la costa</p>
     <p>
-      Visit our <a href="/contact">Contact page</a> for more information.
+      Visita nuesta <a href="/contact">página de contacto</a> para más información.
     </p>
   </footer>
   );
